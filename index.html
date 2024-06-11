@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="#000"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="3" height="15" />
+      <rect id="a" x="4" width="3" height="15" />
+      <rect id="b" x="8" width="3" height="15" />
+      <rect id="c" x="12" width="3" height="15" />
+      <style>
+        rect {
+          animation: 600ms ease-in-out infinite alternate wave;
+        }
+        #a {
+          animation-delay: 300ms;
+        }
+        #b {
+          animation-delay: 700ms;
+        }
+        #c {
+          animation-delay: 500ms;
+        }
+
+        @keyframes wave {
+          from {
+            transform: translateY(0) scaleY(1);
+          }
+
+          to {
+            transform: translateY(80%) scaleY(0.2);
+          }
+        }
+      </style>
+    </svg>
+  </body>
+</html>
