@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <svg
-      width="15"
-      height="15"
-      viewBox="0 0 15 15"
-      fill="#000"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="3" height="15" />
-      <rect id="a" x="4" width="3" height="15" />
-      <rect id="b" x="8" width="3" height="15" />
-      <rect id="c" x="12" width="3" height="15" />
+    <svg width="15" height="15" fill="#000" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 15V0H3V15H0Z" />
+      <path id="a" d="M4 15V0H7V15H4Z" />
+      <path id="b" d="M8 15V0H11V15H8Z" />
+      <path id="c" d="M12 15V0H15V15H12Z" />
       <style>
-        rect {
-          animation: 600ms ease-in-out infinite alternate wave;
+        path {
+          animation: w 1s ease-in-out infinite alternate;
         }
         #a {
-          animation-delay: 300ms;
+          animation-delay: 0.3s;
         }
         #b {
-          animation-delay: 700ms;
+          animation-delay: 0.7s;
         }
         #c {
-          animation-delay: 500ms;
+          animation-delay: 0.5s;
         }
-
-        @keyframes wave {
-          from {
-            transform: translateY(0) scaleY(1);
-          }
-
+        @keyframes w {
           to {
             transform: translateY(80%) scaleY(0.2);
           }
